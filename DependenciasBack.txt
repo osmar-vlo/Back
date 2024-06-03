@@ -1,0 +1,32 @@
+Comandos Linux.
+
+General:
+# Actualizar y actualizar el sistema
+sudo apt update && sudo apt upgrade -y
+
+Backend:
+# Instalar Python
+sudo apt install python3 python3-pip -y
+# Instalar Flask
+sudo pip3 install Flask --break-system-packages
+# Instalar Flask-CORS
+sudo pip3 install flask-cors --break-system-packages
+# Instalar sklearn
+sudo pip3 install scikit-learn --break-system-packages
+# Instalar Opencv
+sudo pip3 install opencv-python-headless --break-system-packages
+# Instalar dlib
+# Instalar cmake
+sudo apt install cmake
+# Instalar git
+sudo apt install git
+git clone https://github.com/davisking/dlib.git
+cd dlib
+mkdir build;
+cd build;
+cmake ..;
+cmake --build .
+cd ..
+sudo python3 setup.py install
+# Instalar imageio
+sudo pip3 install imageio --break-system-packages
